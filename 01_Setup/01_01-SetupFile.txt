@@ -1,0 +1,62 @@
+1.Install python
+    www.python.org -> version for your SO
+2.Install, create and activate a virtual environment
+    a. venv
+    b. virtualvenv
+    c. pipenv
+3. Install Django
+4. Create Django Project
+
+
+# Command to check installation Python
+    import sys
+    print(sys.executable)
+    path python : C:\Users\Administrator\AppData\Local\Programs\Python\Python310\python.exe
+
+# Install pipenv
+    pip install pipenv
+    pipenv install
+    pipenv install requests
+    pipenv shell (activate virtualvenv)
+    pip freze (show the versions of the Project)
+
+# venv Install
+    python -m venv < name Project > 
+    .\Scripts\activate (activate new venv )
+    python -m pip install virtualenv ( Install new virtualenv )
+    python -m pip install --upgrade pip ( upgrade pip )
+    virtualenv / python -m virtualenv
+
+#pipenv 
+    python -m pip install pipenv
+    pipenv shell (activated environment)
+    pipenv run (activated environment)
+    
+    import sys 
+    print(sys.executable)
+    C:\Users\Administrator\.virtualenvs\proj-2nvods2V\Scripts\python.exe
+
+# Import requirements.txt > pipfile
+    pip install requests
+    pip freeze > requirements.txt
+    pipenv install -r requirements.txt (import requirements.txt to pipfile)
+
+# Install Django
+    pipenv shell (activate the venv)
+    django-admin startproject < project name > . 
+    python manage.py runserver ( started django server )
+
+# Install VSCODE
+    Install visual code 
+    ms-python.python
+
+# Install different Python version
+    ##with pipenv
+
+        go inside the folder where do you want install the new python
+        pipenv install --python < Path Python Installation > ex: C:\Python37\python.exe
+
+    ##with virtualenv
+
+        virtualenv  -p < Path Python Installation > ex: C:\Python37\python.exe
+        .\Scripts\activate
