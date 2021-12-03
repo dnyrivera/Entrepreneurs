@@ -27,12 +27,20 @@ h1 {
 }
 .nav-link {
   color: #007cae;
+  text-decoration: none;
+}
+.nav-link:hover {
+  color: #ccc;
+  text-decoration: underline;
 }
 .nav-link-about {
   color: yellow;
 }
 .nav-link-contact {
   color: goldenrod;
+}
+.img-lk-hover:hover {
+  opacity: 0.75;
 }
 /*#Id have priority than Classes, using for a unique individual*/
 #about-nav-link {
