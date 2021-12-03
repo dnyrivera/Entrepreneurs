@@ -4,7 +4,7 @@ body {
   /*text-align: center;*/
 }
 div {
-  background-color: black;
+  background-color: white;
   /*color: green; -- this color was stronger to the body color*/
 }
 a {
@@ -17,6 +17,7 @@ h1 {
   font-weight: 200;
   font-size: 50px;
 }
+
 /*.Classes have priority than tag, using for a group*/
 .main-container {
   width: 1180px;
@@ -41,6 +42,43 @@ h1 {
 }
 .img-lk-hover:hover {
   opacity: 0.75;
+}
+.tb-pricing {
+  font-size: 12px;
+  width: 600px;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+.tb-pricing th {
+  font-size: 15px;
+  color: white;
+  font-weight: bold;
+  border-bottom: 1px solid black;
+  background-color: lightslategray;
+  padding: 10px 12px;
+}
+.tb-pricing td {
+  text-align: end;
+  border-right: 1px #ccc solid;
+  border-left: 1px #ccc dashed;
+  border-bottom: 1px #ccc solid;
+  padding: 10px 12px;
+  /*padding: 2px 20px 10px 30px*/
+  /*padding: top right bottom left*/
+  /*margin: top right bottom left*/
+}
+.tb-pricing tbody td:first-child {
+  text-align: left;
+  color: blue;
+}
+
+.tb-pricing tfoot td {
+  font-size: 15px;
+  color: white;
+  font-weight: bold;
+  border-bottom: 1px solid black;
+  text-align: center;
+  background-color: lightslategray;
 }
 /*#Id have priority than Classes, using for a unique individual*/
 #about-nav-link {
