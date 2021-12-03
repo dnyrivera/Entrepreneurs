@@ -11,13 +11,11 @@ a {
   color: red; /*!important; using to put priority on CSS*/
   font-size: 20px;
 }
-
 h1 {
   color: goldenrod;
   font-weight: 200;
   font-size: 50px;
 }
-
 /*.Classes have priority than tag, using for a group*/
 .main-container {
   width: 1180px;
@@ -29,7 +27,30 @@ h1 {
 .nav-link {
   color: #007cae;
   text-decoration: none;
+  padding: 0px 5px;
 }
+/*Selectors: First/Last/Nth Child*/
+.nav-link:first-child {
+  padding-left: 10px;
+  border-left: 1px solid #007cae;
+}
+.nav-link:last-child {
+  padding-left: 10px;
+  border-right: 1px solid #007cae;
+}
+/*Use the formatting 2 after 2 elements */
+.nav-link:nth-child(2n) {
+  background-color: #007cae;
+  color: #fff;
+  border-radius: 5px;
+}
+/* Use CSS on the 4 position */
+/* .nav-link:nth-child(4) {
+  background-color: #007cae;
+  color: #fff;
+  border-radius: 5px;
+} */
+/*CSS Hover*/
 .nav-link:hover {
   color: #ccc;
   text-decoration: underline;
@@ -67,11 +88,21 @@ h1 {
   /*padding: top right bottom left*/
   /*margin: top right bottom left*/
 }
+/*Selectors: First/Last/Nth Child*/
 .tb-pricing tbody td:first-child {
   text-align: left;
-  color: blue;
+  background-color: lightgreen;
 }
-
+.tb-pricing tbody td:last-child {
+  text-align: center;
+  background-color: lightsalmon;
+}
+.tb-pricing tbody tr:last-child td:nth-child(3) {
+  background-color: lightcoral;
+}
+.tb-pricing tbody tr:nth-child(2n) {
+  background-color: lightskyblue;
+}
 .tb-pricing tfoot td {
   font-size: 15px;
   color: white;
@@ -81,6 +112,6 @@ h1 {
   background-color: lightslategray;
 }
 /*#Id have priority than Classes, using for a unique individual*/
-#about-nav-link {
+#abt-nav-link {
   color: lightcoral;
 }
