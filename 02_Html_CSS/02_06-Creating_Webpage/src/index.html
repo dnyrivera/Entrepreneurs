@@ -8,6 +8,7 @@
       body {
         background-color: grey;
         color: goldenrod;
+        /*text-align: center;*/
       }
       div {
         background-color: black;
@@ -18,11 +19,16 @@
         font-size: 24px;
       }
       /*.Classes have priority than tag, using for a group*/
+      .main-container {
+        width: 780px;
+        margin: 0 auto;
+        padding: 10px;
+      }
       .nav-link-about {
         color: yellow;
       }
       .nav-link-contact {
-        color: lightgreen;
+        color: lightskyblue;
       }
       /*#Id have priority than Classes, using for a unique individual*/
       #about-nav-link {
@@ -32,7 +38,7 @@
     <title>HOMEPAGE</title>
   </head>
   <body>
-    <div>
+    <div class="main-container">
       <h1>Home Page</h1>
       <a class="nav-link-about" id="about-nav-link" href="./pages/about.html">
         About Us</a
