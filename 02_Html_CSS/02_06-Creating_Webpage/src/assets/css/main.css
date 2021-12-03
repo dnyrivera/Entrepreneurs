@@ -1,0 +1,40 @@
+body {
+  background-color: grey;
+  /*color: goldenrod;*/
+  /*text-align: center;*/
+}
+div {
+  background-color: black;
+  /*color: green; -- this color was stronger to the body color*/
+}
+a {
+  color: red; /*!important; using to put priority on CSS*/
+  font-size: 20px;
+}
+
+h1 {
+  color: goldenrod;
+  font-weight: 200;
+  font-size: 50px;
+}
+/*.Classes have priority than tag, using for a group*/
+.main-container {
+  width: 1180px;
+  min-height: 800px;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 10px;
+}
+.nav-link {
+  color: #007cae;
+}
+.nav-link-about {
+  color: yellow;
+}
+.nav-link-contact {
+  color: goldenrod;
+}
+/*#Id have priority than Classes, using for a unique individual*/
+#about-nav-link {
+  color: lightcoral;
+}
